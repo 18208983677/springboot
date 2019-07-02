@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    name: world
+    url: jdbc:mysql://localhost:3306/world
+    data-password: root
+    data-username: -root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml #注意；一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.springboot.entity #对应实体类的路径
